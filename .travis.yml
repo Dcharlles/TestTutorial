@@ -1,0 +1,10 @@
+language: python
+phyton:
+  - 3.6
+  install:
+    -pip install coverage
+    -pip install codecov
+  script:
+    - coverage run tests.py
+    - coverage report
+    - codecov --token=bccf54ec-7227-43c6-b1ed-ddf5a1987073
